@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <title> marcellodb.ca </title>
-  <link rel="stylesheet" href="./styles.css">
   <meta name="description" content="">
   <meta name="viewport" content="width = device-width, initial-scale = 1">
 
@@ -13,24 +12,38 @@
   <link rel="stylesheet" href="./styles.css">
 </head>
 
-<body>
-  <header class="container-fluid bg-dark p-2"> 
-    <div class="row justify-content-md-center text-light">
-      <div class="col-md-6 text-center">
+<body class="bg-light text-dark">
+
+  <header class="container-fluid bg-dark text-light p-2"> 
+
+    <div class="row">
+      <div class="col-md-6 text-center offset-md-3">
         <h1>Marcello Di Benedetto </h1>
         <p>Computer Science student at the University of Calgary</p>
       </div>
+
+      <!-- Social links -->
+      <div class="col-md-3 p-md-3 text-center">
+        <a href="https://github.com/Marcellod1/" target="_blank">
+          <img src="/resources/images/github.png" alt="linked_in" width="25" height="25">
+        </a>
+        <a href="https://www.linkedin.com/in/marcello-di-benedetto-6ab82618b/" target="_blank">
+          <img src="/resources/images/linked_in.png" alt="linked_in" width="25" height="25">
+        </a>
+      </div>
     </div>
+
     <!-- Navbar -->
     <nav class="navbar nav-pills fw-bold nav-fill">
-      <a class="nav-item nav-link active" href="./index.html">Home</a>
-      <a class="nav-item nav-link" href="./pages/projects.html">Projects</a>
-      <a class="nav-item nav-link disabled" href="./pages/blog.html">Blog</a>
-      <a class="nav-item nav-link disabled" href="./pages/contact.html">Contact</a>
+      <a class="nav-item nav-link active" href="/index.html">Home</a>
+      <a class="nav-item nav-link" href="/pages/projects.html">Projects</a>
+      <a class="nav-item nav-link disabled" href="/pages/blog.html">Blog</a>
+      <a class="nav-item nav-link disabled" href="/pages/files.html">Files</a>
+      <a class="nav-item nav-link disabled" href="/pages/contact.html">Contact</a>
     </nav>
   </header>
 
-  <div class="container p-md-5">
+  <div class="container p-5">
     <div class="row justify-content-md-center">
       <div class="col-md-6 text-center">
         <img src="./resources/images/profile_pic.jpg" class="rounded-circle" width="50%" alt="Profile Image">
@@ -49,7 +62,7 @@
   <footer class="container-fluid bg-dark p-2">
     <div class="row justify-content-md-center text-light">
       <div class="col-md-6 text-center">
-        <p class="p1">Copyright © 2021 Marcello Di Benedetto. All rights reserved.</p>
+        <p>Copyright © 2021 Marcello Di Benedetto. All rights reserved.</p>
       </div>
   </footer>
   
