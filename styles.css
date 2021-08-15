@@ -1,9 +1,13 @@
-.image-fixed {
-    width:80%;
-    max-width:100%;
-    height:auto;
+a {
+    text-decoration: none;
+    color:inherit;
 }
 
-a{
-    text-decoration: none;
+a:hover {
+    color:inherit;
+}
+
+.text-justified {
+    text-align: justify;
+    text-justify: inter-word;
 }
