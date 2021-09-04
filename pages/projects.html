@@ -52,12 +52,14 @@
 
     <div class="row justify-content-center">    
       <div class="bg-dark text-light rounded-3 shadow-lg col-12 p-4 m-1 col-lg-4">
-        <h3>3D Boids Simulation</h3>
-        <p>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-          totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
-          sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-        </p>
+        <h3>Boid Flocking in 3D</h3>
+        <p class="text-justified">
+          A simulation of emergent flocking behaviour of boids (bird-oids) within a 3D environment, rendered with the GIVR library. Each boid
+          has three distict radii of awarness, which dictate forces to separate from, align with, and match velocities with
+          neighboring boids. These forces are accumulated, and the boid's positions are updated each frame adhering to a
+          semi-implicit eulerian integration method. A 3D grid data structure was implemented as a caching solution to optimize the 
+          O(n<sup>2</sup>) algorithm. This optimization allows for up to two-thousand boids being simulated at once.
+
       </div>
 
       <div class="rounded-3 shadow-lg bg-light col-12 p-4 m-1 col-lg-7">
