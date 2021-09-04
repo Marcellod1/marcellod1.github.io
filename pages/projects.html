@@ -58,8 +58,7 @@
           has three distict radii of awarness, which dictate forces to separate from, align with, and match velocities with
           neighboring boids. These forces are accumulated, and the boid's positions are updated each frame adhering to a
           semi-implicit eulerian integration method. A 3D grid data structure was implemented as a caching solution to optimize the 
-          O(n<sup>2</sup>) algorithm. This optimization allows for up to two-thousand boids being simulated at once.
-
+          O(n<sup>2</sup>) algorithm. This optimization allows for the simulation of up to two-thousand boids with a stable frame rate.
       </div>
 
       <div class="rounded-3 shadow-lg bg-light col-12 p-4 m-1 col-lg-7">
@@ -74,11 +73,14 @@
 
     <div class="row justify-content-center">   
       <div class="bg-dark text-light rounded-3 shadow-lg col-12 p-4 m-1 col-lg-4">
-        <h3>Mass Spring Simulation</h3>
-        <p>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-          totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
-          sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+        <h3>Mass Spring Systems</h3>
+        <p class="text-justified">
+          A collection of four mass spring system simulations. This simulation utilizes a semi-implicit integration method to update positions 
+          and velocities of each point mass. This integration is performed after the spring, damping, gravitational and collision forces are accumulated 
+          for each mass, applying Newton's second and third laws of motion. This series of systems aims to portray the relative simplicity in designing complex 
+          mass spring simulations once numerical stability is ensured by correctly applying semi-implicit integration. Across all four simulations, 
+          only the initial spring and mass configurations are altered along with a few constants. 
+          All systems are simulated by the same algorithm after these initial parameters are set.
         </p>
       </div>
 
@@ -93,10 +95,12 @@
     <div class="row justify-content-center">   
       <div class="bg-dark text-light rounded-3 shadow-lg col-12 p-4 m-1 col-lg-4">
         <h3>Roller Coaster Animation</h3>
-        <p>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-          totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
-          sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+        <p class="text-justified">
+          An animation of a roller coaster and track represented by a cubic hermite spline. This spline forms the path of the track in 3D space and is parameterized as a function
+          of time, mapping to points along the curve. Practically, this spline was parameterized in terms of arc lengths along the curve using a look-up table. This is to allow for 
+          more convinient simulation programming, as for each frame, the distance travelled can be trivially calculated through kinematic equations. The orientation of the track and 
+          cart geometry is calculated at each point on the spline through the use of a Frenet Frame. This frame ensures the geometry is oriented in a way that the centripetal forces 
+          as a result of the track's curvature are cancelled out by the cart's normal force and experiental "centrifugal" force.
         </p>
       </div>
 
@@ -111,10 +115,11 @@
     <div class="row justify-content-center">
       <div class="bg-dark text-light rounded-3 shadow-lg col-12 p-4 m-1 col-lg-4">
         <h3>Fan Nap - A Blender animation</h3>
-        <p>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-          totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
-          sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+        <p class="text-justified">
+          A simple animation consisting of objects modelled, rigged, keyframed and rendered in Blender. The objective of this animation is to personify an
+          everyday object using common animation principles such as squash and stretch, ease-in-ease-out and anticipation. To portray these principles, the object was
+          rigged with a skeleton consisting of many "bones", where each "bone" governs the transformations of model geometry adjacent to it. Fine tuning of bone geometry was 
+          performed through Blender's "weight paint" heat map. The resulting animation was rendered with Blender's Eevee rendering engine.
         </p>
       </div>
 
@@ -129,10 +134,12 @@
     <div class="row justify-content-center">
       <div class="bg-dark text-light rounded-3 shadow-lg col-12 p-4 m-1 col-lg-4">
         <h3>Top Shopper</h3>
-        <p>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-          totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
-          sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+        <p class="text-justified">
+          A 3D arena combat focused driving game developed by a five person team as a term project for CPSC 585: Games Programming. This project was developed with C++, using libraries
+          such as OpenGL and Nvidia PhysX. The rendering engine was a responsibility of mine during development, porting boilerplate code from previous University assignments to fit this
+          project's scope. The rendering engine included OBJ file loading, shadow map rendering and text rendering with full texture support. Significant optimizations for the rendering were
+          a constant concern as the pipeline needed to keep up with the fast paced gameplay. A distinction between static and dynamic objects, defferred rendering and baked in shadow textures 
+          were utilized in this project.
         </p>
       </div>
     
@@ -143,51 +150,6 @@
         </div>
       </div>
     </div>
-
-
-    <div class="row justify-content-center">
-      <div class="bg-dark text-light rounded-3 shadow-lg col-12 p-4 m-1 col-lg-4">
-        <h3>Shophoto</h3>
-        <p>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-          totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
-          sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-        </p>
-      </div>
-
-      <div class="rounded-3 shadow-lg bg-light col-12 p-4 m-1 col-lg-7">
-        <div class="container">
-          <div class="row p-1">
-            <div class="col-4 text-center">
-              <img src="/resources/images/profile_pic.jpg" width="75%" alt="Profile Image">
-            </div>
-
-            <div class="col-4 text-center">
-              <img src="/resources/images/profile_pic.jpg" width="75%" alt="Profile Image">
-            </div>
-
-            <div class="col-4 text-center">
-              <img src="/resources/images/profile_pic.jpg" width="75%" alt="Profile Image">
-            </div>
-          </div>
-
-          <div class="row p-1">
-            <div class="col-4 text-center">
-              <img src="/resources/images/profile_pic.jpg" width="75%" alt="Profile Image">
-            </div>
-
-            <div class="col-4 text-center">
-              <img src="/resources/images/profile_pic.jpg" width="75%" alt="Profile Image">
-            </div>
-
-            <div class="col-4 text-center">
-              <img src="/resources/images/profile_pic.jpg" width="75%" alt="Profile Image">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
   <!-- Body container -->
   </div>
 
