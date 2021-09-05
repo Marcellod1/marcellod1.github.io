@@ -34,14 +34,30 @@
     </div>
   </header>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark nav-pills fw-bold">
-    <div class="container-fluid justify-content-center">
-        <a class="nav-item nav-link px-5 mx-2 active" href="/index.html">Home</a>
-        <a class="nav-item nav-link px-5 mx-2" href="/pages/projects.html">Projects</a>
-        <a class="nav-item nav-link px-5 mx-2 disabled" href="#">Blog</a>
-        <a class="nav-item nav-link px-5 mx-2 disabled" href="#">Files</a>
-        <a class="nav-item nav-link px-5 mx-2 disabled" href="#">Contact</a>
+  <!-- Navbar collapsable thanks to https://www.youtube.com/watch?v=qNifU_aQRio -->
+  <nav class="navbar navbar-expand-md sticky-top nav-pills navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+      <ul class="navbar-nav fw-bold py-2">
+        <li class="nav-item ">
+          <a class="nav-link active px-4 mx-3" href="/index.html">Home</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link px-4 mx-3" href="/pages/projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled px-4 mx-3" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled px-4 mx-3" href="#">Files</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled px-4 mx-3" href="#">Contact</a>
+      </li>
+      </ul>
     </div>
   </nav>
 
