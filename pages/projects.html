@@ -64,11 +64,11 @@
         </h3>
 
         <p class="text-justified">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id mi quam. Phasellus ultrices lacus eu porttitor ultricies. 
-          Pellentesque nec metus tortor. Ut a auctor augue. Vivamus a dictum ante. Nullam neque eros, scelerisque at massa et, ullamcorper ullamcorper diam.
-          Sed gravida ex sit amet accumsan lobortis. Vivamus vel aliquam elit, ac tristique tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Maecenas id mi quam. Phasellus ultrices lacus eu porttitor ultricies. Pellentesque nec metus tortor. Ut a auctor augue. Vivamus a dictum ante. 
-          Nullam neque eros, scelerisque at massa et, ullamcorper ullamcorper diam. Sed gravida ex sit amet accumsan lobortis. Vivamus vel aliquam elit, ac tristique tellus. 
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis blanditiis magni sed totam aperiam officiis modi, natus error, accusamus consequuntur labore. Dolorum iusto aut, culpa sunt vitae quos id aperiam?
+
+
+
+
         </p>
       </div>
 
@@ -91,9 +91,9 @@
         </h3>
 
         <p class="text-justified">
-          A simulation of emergent flocking behaviour of boids (bird-oids) within a 3D environment, rendered with the GIVR library. Each boid
+          A simulation of emergent flocking behaviour of boids (bird-oids) within a 3D environment. Each boid
           has three distict radii of awarness, which dictate forces to separate from, align with, and match velocities with
-          neighboring boids. These forces are accumulated, and the boid's positions are updated each frame adhering to a
+          neighboring boids. Forces are accumulated, and positions ar  updated adhering to a
           semi-implicit eulerian integration method. A 3D grid data structure was implemented as a caching solution to optimize the 
           O(n<sup>2</sup>) algorithm. This optimization allows for the simulation of up to two-thousand boids with a stable frame rate.
         </p>
@@ -144,9 +144,8 @@
         </h3>
 
         <p class="text-justified">
-          An animation of a roller coaster and track represented by a cubic hermite spline. This spline forms the path of the track in 3D space and is parameterized as a function
-          of time, mapping to points along the curve. Practically, this spline was parameterized in terms of arc lengths along the curve using a look-up table. This is to allow for 
-          more convinient simulation programming, as for each frame, the distance travelled can be trivially calculated through kinematic equations. The orientation of the track and 
+          An animation of a roller coaster and track represented by a cubic hermite spline. The spline was parameterized in terms of arc lengths along the curve using a look-up table. 
+          With this construction, each frame, the distance travelled can be trivially calculated through kinematic equations. The orientation of the track and 
           cart geometry is calculated at each point on the spline through the use of a Frenet Frame. This frame ensures the geometry is oriented such that the centripetal forces 
           due to the track's curvature are cancelled out by the cart's normal force and experiential "centrifugal" force.
         </p>
