@@ -1,9 +1,9 @@
-a {
+.link-no-deco {
     text-decoration: none;
     color:inherit;
 }
 
-a:hover {
+.link-no-deco:hover {
     color:#0D6EFD;
 }
 
