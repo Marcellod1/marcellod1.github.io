@@ -11,3 +11,10 @@ a:hover {
     text-align: justify;
     text-justify: inter-word;
 }
+
+/* override carousel caption to show underneath the image rather than under it */
+.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+}
