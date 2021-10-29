@@ -64,19 +64,19 @@
 <div class="container-fluid p-3">
   <div class="row justify-content-center">    
     <div class="bg-light text-dark rounded-3 shadow-lg col-12 p-4 m-1 col-xl-7">
-        <h3>Language Practice Lock Screen</h3>
+        <h3>Exercise Lock Screen</h3>
         <p>Created By: Marcello Di Benedetto, Abraham Beauferris, Christopher Rodriguez</p>
         <p class="text-justified">
           This project revolves around creating a novel replacement to the “slide to unlock” style lock screens common to modern smartphones that still resists accidental activation.
-          This specific replacement does not stray far from the traditional design as it still has an emphasis on touch or multi-touch based interaction. Though, as a requirement of 
-          the design process, the replacement lock screen should have a side benefit to the user in terms of self-betterment or the encouragement of healthy habits.The 10+10 design method 
-          was put to use for this project to narrow in on a final design with useful and intuitive features. 
+          This specific replacement aims to utilize sensor based user input supported by modern smartphones. The utilized sensors could include any combination of the phone’s accelerometer,
+          gyroscope, cameras and microphone. Though, as a requirement of the design process, the replacement lock screen should have a side benefit to the user in terms of self-betterment 
+          or the encouragement of healthy habits. The 10+10 design method was put to use for this project to narrow in on a final design with useful and intuitive features. 
         </p>
 
         <p class="text-justified">
-        The final design chosen by our group is one of an educational nature, where a user is prompted to put their foreign language skills to the test in order to unlock their phone.
-         The foregin language in this case is Japanese, as it aligns with one of our group members personal aspirations to learn and practice the language. The resulting design tests the 
-         user’s knowledge of Hiragana and Katakana, the core Japanese writing systems, with a configurable interface.
+          The final design chosen by our group aims to motivate the user to complete workout routines as a prerequisite for their phone to unlock. This design prompts the user with a few different
+          workouts and will use the phone’s camera along with Google’s Teachable Machine, to recognize their completion of the workout. Once the workout is complete, their phone will unlock.
+          The intent behind this design is to leverage the common compulsion to check one’s phone to motivate quick and periodical exercises.
         </p>
     </div>
   </div>  
@@ -87,126 +87,132 @@
     <div class="bg-dark text-light rounded-3 shadow-lg col-12 p-4 m-1 col-xl-7">
       <h3 class="p-2">Initial Concept Sketches</h3>
       <p class="text-justified">
-        As this touch-based project was developed in parallel with a sensor-based project, the following concept sketches include only the touch-based sketches from the concepts.
+        As this sensor-based project was developed in parallel with a touch-based project, the following concept sketches include only the touch-based sketches from the concepts.
       </p>
 
       <div id="concepts-carousel" class="carousel carousel-dark slide" data-bs-interval="false">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="../resources/img/touch-lock-screen/concepts/concept-1.png" class="d-block w-100" alt="...">
+            <img src="../resources/img/sensor-lock-screen/concepts/concept-1.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
-              <h5>Concept #1 - Petal Plucking</h5>
+              <h5>Concept #1 - Complete the joke</h5>
               <p class="text-justified">
-                This touch based concept greets the user with an image of a  flower on the lock screen. The user must then touch and swipe away the petals to remove them from the flower to unlock the phone. This could also have a passcode based variation, where the user configures a specific sequence of petals to pull that would unlock their phone. This concept was not pursued as it did not have a direct side benefit to the user.
+                This concept utilizes the microphone to facilitate a back and forth conversation with the phone in the form of a knock knock joke. 
+                The user would firstly set up a “punchline” to be used as a voice based passcode in the phone’s settings. The user would prompt the phone with “knock knock”,
+                the phone would then reply with “who’s there?”. The user would then repeat their passphrase/punchline to the phone in order to authenticate and unlock the phone. 
+                This concept was not pursued further as it does not have a clear secondary benefit to the user.
               </p>
             </div>
           </div>
 
           <div class="carousel-item">
-            <img src="../resources/img/touch-lock-screen/concepts/concept-2.png" class="d-block w-100" alt="...">
+            <img src="../resources/img/sensor-lock-screen/concepts/concept-2.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
-              <h5>Concept #2 - Hand Scanning</h5>
+              <h5>Concept #2 - Face mask scanning</h5>
               <p class="text-justified">
-                This multi touch based concept requires the user to lay their hand on their phone screen to mimic a hand scanner. The phone will then unlock when specific points on the screen have been touched and held at the same time. This was not pursued further as it does not have a direct side benefit to the user and our group was unsure how it would be implemented in a way that provided a degree of authentication expected from a hand scanner.
+                This concept aims to provide a way to authenticate with face id while wearing a facemask. The user would be required to wear a QR code printed or stuck on their facemask, 
+                which the phone will scan and use to authenticate the user. This QR code would have to be unique to each user. While this concept is genuinely useful, we wanted to go with a more novel, 
+                behaviourally beneficial approach to our final design.
               </p>
             </div>
           </div>
           
           <div class="carousel-item">
-            <img src="../resources/img/touch-lock-screen/concepts/concept-3.png" class="d-block w-100" alt="...">
+            <img src="../resources/img/sensor-lock-screen/concepts/concept-3.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
-              <h5>Concept #3 - Wipe away to unlock</h5>
+              <h5>Concept #3 - Workout to unlock</h5>
               <p class="text-justified">
-                For this multi-touch based concept, the user would be greeted with their regular lock screen display. They can then use touch or multi touch to wipe away their lock screen, exposing their home screen in the process. Once the entire lock screen has been wiped away, the phone will unlock and the home screen would become intractable. This provides a slight secondary action for the user by serving as a fidget tool, but this benefit was not as direct as we wanted so this concept was not pursued further.
+                This concept utilizes the accelerometer and gyroscope to track motions taken by the user. These motions would be classified as repetitions of short workouts required to unlock the phone. 
+                The phone would prompt the user with specific workouts and the amount of repetitions required to unlock the phone. This concept was chosen for further iteration, 
+                as it is directly beneficial to the user, and would allow us to explore interesting technologies during implementation.
               </p>
             </div>
           </div>
 
           <div class="carousel-item">
-            <img src="../resources/img/touch-lock-screen/concepts/concept-4.png" class="d-block w-100" alt="...">
+            <img src="../resources/img/sensor-lock-screen/concepts/concept-4.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
-              <h5>Concept #4 - Timing based touch input</h5>
+              <h5>Concept #4 - Smile to unlock</h5>
               <p class="text-justified">
-                For this touch-based concept, the user must wait for a constantly shrinking circle to enter the highlighted radius. Once the circle is within this region, a touch input from the user will unlock the phone.
-                 This concept was not pursued further as it seemed a bit too simple, and could accidentally be unlocked. This concept also did not have a direct side benefit to the user.
+                This concept is an extra requirement on face id, where a specific facial expression is also required to unlock. In this case, a smile is required to unlock the phone. 
+                While this concept can be beneficial to the user, it does not stray far enough from traditional phone unlock processes. 
+                Due to this, this concept did not undergo further iteration.
               </p>
             </div>
           </div>
 
           <div class="carousel-item">
-            <img src="../resources/img/touch-lock-screen/concepts/concept-5.png" class="d-block w-100" alt="...">
+            <img src="../resources/img/sensor-lock-screen/concepts/concept-5.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
-              <h5>Concept #5 - Touch screen to match rhythm</h5>
+              <h5>Concept #5 - Blinking pattern </h5>
               <p class="text-justified"> 
-                This touch based concept requires the user to tap the screen along with the beat of music playing from the speaker to unlock the phone. This concept has a side benefit to the user as it could be
-                 personalizable with their own music library. This could also have an authentication aspect as the user could choose a song and enter the rhythm without the prompt from the speaker.
-                  This concept was not pursued as we wanted to go with a more educational route for our final design. 
+                This concept utilizes the front facing camera to register a series of blinks from the user, acting as a passcode. These blinks will be timed and parsed into morse code,
+                then compared to the user’s configured passcode. This concept was not pursued as it does not have a clear behavioural benefit to the user.
               </p>
             </div>
           </div>
 
           <div class="carousel-item">
-            <img src="../resources/img/touch-lock-screen/concepts/concept-6.png" class="d-block w-100" alt="...">
+            <img src="../resources/img/sensor-lock-screen/concepts/concept-6.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
-              <h5>Concept #6 - Secret wallpaper </h5>
+              <h5>Concept #6 - Dial lock</h5>
               <p class="text-justified"> 
-                The phone will display the user’s lock screen image as normal, and the user must select their configured sequence of locations on the image to unlock the phone. 
-                This concept has an authentication based aspect, and resists being accidentally unlocked due to the requirement of multiple touch inputs at specific locations. 
-                This concept was not pursued further as there was not an obvious way to incorporate animation based user feedback.
+                This concept utilizes the phone’s gyroscope and accelerometer to simulate the motions required by a dial lock to enter a numeric passcode consisting of three numbers. 
+                The user would rotate their phone accordingly to align the indicator (which always points up) with numbers on a dial in the traditional right-left-right sequence. 
+                This concept was not pursued further as it did not have a clear behavioural benefit, and could be quite cumbersome to use.
               </p>
             </div>
           </div>
 
           <div class="carousel-item">
-            <img src="../resources/img/touch-lock-screen/concepts/concept-7.png" class="d-block w-100" alt="...">
+            <img src="../resources/img/sensor-lock-screen/concepts/concept-7.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
-              <h5>Concept #7 - Fruit tapping</h5>
+              <h5>Concept #7 - Pan flute unlock</h5>
               <p class="text-justified"> 
-                The phone will display a series of fruit images, for which the user would have to tap in the correct sequence to unlock their phone. 
-                This has an authentication based  aspect as the user could set up their sequence beforehand and enter it similar to a passcode. 
-                This concept was not pursued further as it did not stray far enough from the traditional passcode based lock screens.
+                This concept leverages touch and microphone capabilities to provide an alternate way to enter a sequence based password. 
+                This concept was inspired by The Legend of Zelda: Spirit Tracks spirit flute minigame. The user must click and drag to position a flute in the center of the screen underneath 
+                an indicator then blow into the microphone to produce a tone. The user would repeat this four times blowing flutes in the correct order to unlock the phone. 
+                The order of the flutes would be configured ahead of time by the user as a passcode. This concept was not pursued further as we wanted to stray from traditional passcode entering systems.
               </p>
             </div>
           </div>
 
           <div class="carousel-item">
-            <img src="../resources/img/touch-lock-screen/concepts/concept-8.png" class="d-block w-100" alt="...">
+            <img src="../resources/img/sensor-lock-screen/concepts/concept-8.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
-              <h5>Concept #8 - Notification swiping</h5>
+              <h5>Concept #8 - Roll a ball to unlock</h5>
               <p class="text-justified"> 
-                This concept is another play on a sequence based lock input, but it utilizes the traditional sliding gesture to enter the passcode sequence. 
-                This lock screen will display a series of notifications for the user to swipe away in the correct sequence. Though, there is an extra dimension for the passcode,
-                 as the direction of the swipe matters. This concept was not pursued further as it does not have a direct benefit to the user.
+                This concept utilized the accelerometer and gyroscope to simulate rolling a billiard ball into the four corners of the screen. As the ball enters each corner, 
+                the corner will turn green to indicate to the user which corners are complete. Once all four corners have turned green, the phone will unlock. 
+                This concept was not pursued as it does not have a clear behavioural benefit to the user.
               </p>
             </div>
           </div>
 
           <div class="carousel-item">
-            <img src="../resources/img/touch-lock-screen/concepts/concept-9.png" class="d-block w-100" alt="...">
+            <img src="../resources/img/sensor-lock-screen/concepts/concept-9.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
-              <h5>Concept #9 - Foreign language alphabet test</h5>
-              <p class="text-justified"> 
-                The user would be prompted to write a character from a foreign language which they are currently practicing. The user would draw the character on a canvas and submit it. 
-                If the character is close enough to the required accuracy, the phone will be unlocked, if not, there will be a small delay and the user will be prompted with another character until they get one correct. 
-                This concept was chosen for the next iteration of the design process as it undoubtedly beneficial to the user, and would avoid accidental activation. 
-                There are also variations on this design that can provide some form of authentication.
-              </p>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="../resources/img/touch-lock-screen/concepts/concept-10.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption bg-dark text-light d-md-block">
-              <h5>Concept #10 -  Morse code password</h5>
+              <h5>Concept #9 -  Hand gesture to unlock</h5>
               <p class="text-justified">
-                This concept would require the user to enter a passcode by tapping a sequence of morse code dots/ dashes. Dots would be entered by a single quick touch input and dashes could be input by either a long press,
-                or a multi touch gesture. The sequence would be displayed on the screen as the user enters it and the phone would unlock if the input matches the user’s pre-determined passcode.
-                This concept would resist accidental activation and is a clear example of authentication. Though, this concept was not chosen for the next iteration as it is still essentially a 4 digit passcode, 
-                which we wanted to stray further away from.
+                This concept utilizes the camera to recognize the user’s hand gestures. The user would be able to set up a specific gesture as a form of passcode. 
+                When this gesture is correctly presented to the phone, the phone will unlock. This concept was not pursued as it does not have a clear behavioural benefit to the user.
               </p>
             </div>
           </div>
         </div>
+
+        <div class="carousel-item">
+          <img src="../resources/img/sensor-lock-screen/concepts/concept-10.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption bg-dark text-light d-md-block">
+            <h5>Concept #10 - Flick sequence</h5>
+            <p class="text-justified"> 
+              This concept utilizes the gyroscope to recognize a series of “flicking” motions. The phone would prompt the user with a cardinal direction, 
+              then the user must flick their phone in the specified direction. They will be prompted multiple times to avoid accidental activation. 
+              After all prompts have been successfully completed, the phone will unlock. This concept was not pursued as it does not have a clear behavioural benefit to the user
+            </p>
+          </div>
+        </div>
+
 
         <button class="carousel-control-prev" type="button" data-bs-target="#concepts-carousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -225,12 +231,7 @@
     <div class="bg-light text-dark rounded-3 shadow-lg col-12 p-4 m-1 col-xl-7">
         <h3>Choice of Concept</h3>
         <p class="text-justified">
-            From the initial concept sketches, we ended up going the route of the educational approach of the “Foreign language alphabet test”. 
-            This concept had the most direct benefit to the user and was novel enough to not rely on a sequence of actions required by traditional 
-            lock screens. A drawback to this design is for it to be educational and randomly generated, the design would not have a clear authentication 
-            aspect. As anyone familiar with the language would be able to unlock the phone.Though this could be rectified in the variations, 
-            or would not be necessary if this system is used in conjunction with face id for authentication. Our group believed the clear educational
-            benefit of this design is novel enough to overcome some authentication drawbacks.
+
         </p>
     </div>
   </div>
@@ -243,117 +244,108 @@
       <h3 class=" m-2">Variations/ Details </h3>
       
       <p class="text-justified">
-        The following are some details and variations of our chosen concept, the “Foreign language alphabet test” lock screen.
+        The following are some details and variations of our chosen concept, the “Exercise to unlock” lock screen.
       </p>
 
       <div id="refinements-carousel" class="carousel carousel-dark slide" data-bs-interval="false">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="../resources/img/touch-lock-screen/refinements/refinement-1.png" class="d-block w-100" alt="...">
+            <img src="../resources/img/sensor-lock-screen/refinements/refinement-1.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
               <h5>Variation/ Detail #1 - Skip button</h5>
               <p class="text-justified">
-                This detail includes a skip button along with the submit button. The skip button would enable the user to quickly regenerate a random prompt in a case where 
-                they are not sure of the character or need to get into the phone quickly.
+
               </p>
             </div>
           </div>
 
           <div class="carousel-item">
-            <img src="../resources/img/touch-lock-screen/refinements/refinement-2.png" class="d-block w-100" alt="...">
+            <img src="../resources/img/sensor-lock-screen/refinements/refinement-2.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
               <h5>Variation/Detail #2 - Voice prompt</h5>
               <p class="text-justified">
-                This variation would replace the regular text based character prompt with a voice clip from the phone, prompting the user with a character. 
-                This approach could assist the user in the pronunciation of the character along with practice writing it.
+
               </p>
             </div>
           </div>
           
           <div class="carousel-item">
-            <img src="../resources/img/touch-lock-screen/refinements/refinement-3.png" class="d-block w-100" alt="...">
+            <img src="../resources/img/sensor-lock-screen/refinements/refinement-3.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
               <h5>Variation/Detail #3 - Language selection</h5>
               <p class="text-justified">
-                This detail would add support for multiple languages with different alphabets. This would be relevant for users who want to practice multiple languages, 
-                and could be configured on the lock screen itself in real time or beforehand in the phone’s settings.
+
 
               </p>
             </div>
           </div>
 
           <div class="carousel-item">
-            <img src="../resources/img/touch-lock-screen/refinements/refinement-4.png" class="d-block w-100" alt="...">
+            <img src="../resources/img/sensor-lock-screen/refinements/refinement-4.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
               <h5>Variation/Detail #4 - Character tracing</h5>
               <p class="text-justified">
-                This variation increases the ease of use of the lock screen while providing a bit more constructive visual feedback for the user. Upon an incorrect input,
-                 the trace and stroke ordering would be presented to the user to align with the educational aspect of the design.
+
 
               </p>
             </div>
           </div>
 
           <div class="carousel-item">
-            <img src="../resources/img/touch-lock-screen/refinements/refinement-5.png" class="d-block w-100" alt="...">
+            <img src="../resources/img/sensor-lock-screen/refinements/refinement-5.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
               <h5>Variation/Detail #5 - Specific character to unlock (Passcode)</h5>
               <p class="text-justified">
-                This is a variation that would give this design an aspect of authentication, where the user would draw on the canvas a specific character, or sequence of characters. 
-                This sequence would behave the same as a written passcode.
+
               </p>
             </div>
           </div>
 
           <div class="carousel-item">
-            <img src="../resources/img/touch-lock-screen/refinements/refinement-6.png" class="d-block w-100" alt="...">
+            <img src="../resources/img/sensor-lock-screen/refinements/refinement-6.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
               <h5>Variation/Detail #6 - Character pronunciation feedback</h5>
-              This variation would add more feedback to the user after they correctly draw the character. The phone would speak to the user the sound of the character they drew, 
-              which would assist the user in creating sound associations and proper pronunciation.
+
               </p>
             </div>
           </div>
 
           <div class="carousel-item">
-            <img src="../resources/img/touch-lock-screen/refinements/refinement-7.png" class="d-block w-100" alt="...">
+            <img src="../resources/img/sensor-lock-screen/refinements/refinement-7.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
               <h5>Variation/Detail #7 - Recall based prompt</h5>
               <p class="text-justified">
-                This variation would prompt the user to recall and draw a character from certain identifiers, rather than directly ask for the character. For example,
-                asking for the first letter of an alphabet.
+
               </p>
             </div>
           </div>
 
           <div class="carousel-item">
-            <img src="../resources/img/touch-lock-screen/refinements/refinement-8.png" class="d-block w-100" alt="...">
+            <img src="../resources/img/sensor-lock-screen/refinements/refinement-8.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
               <h5>Variation/Detail #8 - Optional test</h5>
               <p class="text-justified">
-                This detail would add another button to the interface that would allow the user to skip the character quiz entirely, to reduce the intrusiveness of the application.
+
               </p>
             </div>
           </div>
 
           <div class="carousel-item">
-            <img src="../resources/img/touch-lock-screen/refinements/refinement-9.png" class="d-block w-100" alt="...">
+            <img src="../resources/img/sensor-lock-screen/refinements/refinement-9.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
               <h5>Variation/Detail #9 - Daily retention test</h5>
               <p class="text-justified">
-                This variation would test the user’s retention of a language and its english translations through the use of a scheduled retention test. In the morning, 
-                the user would be notified with english words and their translations in another language. Throughout the day, their phone will prompt them to enter a subset of these translations to unlock their phone.
+
               </p>
             </div>
           </div>
 
           <div class="carousel-item">
-            <img src="../resources/img/touch-lock-screen/refinements/refinement-10.png" class="d-block w-100" alt="...">
+            <img src="../resources/img/sensor-lock-screen/refinements/refinement-10.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
               <h5>Variation/Detail #10 - Pronunciation test</h5>
               <p class="text-justified">
-                This variation focuses on testing the user’s pronunciation of a language. The lock screen would prompt the user with a word, and the user would speak the
-                correct pronunciation into the phone’s microphone to unlock the phone.
+
               </p>
             </div>
           </div>
@@ -408,9 +400,9 @@
   <div class="row justify-content-center">    
       <div class="bg-light text-dark rounded-3 shadow-lg col-12 p-4 m-1 col-xl-7">
           <h3>Demo Video and Links</h3>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/lLFmNLiAUHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <p class="fw-bold"> Site Link: <a href="https://marcellod1.github.io/ocr-lockscreen" target="_blank"> https://marcellod1.github.io/ocr-lockscreen </a></p>
-          <p class="fw-bold"> Source Code: <a href="https://github.com/Marcellod1/ocr-lockscreen" target="_blank"> https://github.com/Marcellod1/ocr-lockscreen </a></p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/yqfLu6KF4KA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p class="fw-bold"> Site Link: <a href="https://marcellod1.github.io/sensor-based-lockscreen" target="_blank"> https://marcellod1.github.io/sensor-based-lockscreen </a></p>
+          <p class="fw-bold"> Source Code: <a href="https://github.com/Marcellod1/sensor-based-lockscreen" target="_blank"> https://github.com/Marcellod1/sensor-based-lockscreen </a></p>
       </div>
   </div> 
   <!-- Body container -->
