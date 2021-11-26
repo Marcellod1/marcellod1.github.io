@@ -1,0 +1,380 @@
+<!doctype html>
+<html>
+    
+<head>
+    <meta charset="utf-8">
+    <title> marcellodb - projects</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+
+    <!-- Get bootstrap stylesheet from the BootStrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    
+</head>
+  
+<body class="bg-light text-dark">
+    <!-- Title -->
+    <header class="container-fluid bg-dark text-light p-2"> 
+        <div class="row justify-content-center">
+            <div class="text-center col-12 col-md-6">
+                <h1 class="fw-bold">The Water Clock</h1>
+                <p>CPSC 581 Fall 2021 - Project 3</p>
+                <a  class="link-no-deco" href="https://github.com/Marcellod1/water-clock" target="_blank">
+                    <img src="../resources/img/github.png" alt="github-img" width="30" height="30">
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Navbar collapsable thanks to https://www.youtube.com/watch?v=qNifU_aQRio -->
+  <nav class="navbar navbar-expand-lg sticky-top nav-pills navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+      <ul class="navbar-nav fw-bold py-2">
+        <li class="nav-item ">
+          <a class="nav-link px-5 mx-3" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link active px-5 mx-3" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled px-5 mx-3" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled px-5 mx-3" href="#">Files</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled px-5 mx-3" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+    
+<!-- Body container -->
+<div class="container-fluid p-3">
+  <div class="row justify-content-center">    
+    <div class="bg-light text-dark rounded-3 shadow-lg col-12 p-4 m-1 col-xl-7">
+        <h3>The Water Clock</h3>
+        <p>Created By: Abraham Beauferris, Marcello Di Benedetto, Christopher Rodriguez, Rory Skipper</p>
+        <p class="text-justified">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure error distinctio ipsum minima atque consequuntur provident, non voluptate ab voluptatibus odio incidunt! Culpa, quo qui. Nobis maxime culpa quaerat!
+        </p>
+
+        <p class="text-justified">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure error distinctio ipsum minima atque consequuntur provident, non voluptate ab voluptatibus odio incidunt! Culpa, quo qui. Nobis maxime culpa quaerat!
+        </p>
+    </div>
+  </div>  
+
+  <!-- CONCEPT SKETCHES -->
+  <!-- img carousel from https://getbootstrap.com/docs/5.1/components/carousel/-->
+  <div class="row justify-content-center">    
+    <div class="bg-dark text-light rounded-3 shadow-lg col-12 p-4 m-1 col-xl-7">
+      <h3 class="p-2">Initial Concept Sketches</h3>
+
+      <div id="concepts-carousel" class="carousel carousel-dark slide" data-bs-interval="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../resources/img/water-clock/concepts/concept-1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Concept #1 - Petal Plucking</h5>
+              <p class="text-justified">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure error distinctio ipsum minima atque consequuntur provident, non voluptate ab voluptatibus odio incidunt! Culpa, quo qui. Nobis maxime culpa quaerat!
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../resources/img/water-clock/concepts/concept-2.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Concept #2 - Hand Scanning</h5>
+              <p class="text-justified">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure error distinctio ipsum minima atque consequuntur provident, non voluptate ab voluptatibus odio incidunt! Culpa, quo qui. Nobis maxime culpa quaerat!
+              </p>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <img src="../resources/img/water-clock/concepts/concept-3.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Concept #3 - Wipe away to unlock</h5>
+              <p class="text-justified">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure error distinctio ipsum minima atque consequuntur provident, non voluptate ab voluptatibus odio incidunt! Culpa, quo qui. Nobis maxime culpa quaerat!
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../resources/img/water-clock/concepts/concept-4.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Concept #4 - Timing based touch input</h5>
+              <p class="text-justified">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure error distinctio ipsum minima atque consequuntur provident, non voluptate ab voluptatibus odio incidunt! Culpa, quo qui. Nobis maxime culpa quaerat!
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../resources/img/water-clock/concepts/concept-5.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Concept #5 - Touch screen to match rhythm</h5>
+              <p class="text-justified">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure error distinctio ipsum minima atque consequuntur provident, non voluptate ab voluptatibus odio incidunt! Culpa, quo qui. Nobis maxime culpa quaerat!
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../resources/img/water-clock/concepts/concept-6.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Concept #6 - Secret wallpaper </h5>
+              <p class="text-justified">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure error distinctio ipsum minima atque consequuntur provident, non voluptate ab voluptatibus odio incidunt! Culpa, quo qui. Nobis maxime culpa quaerat!
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../resources/img/water-clock/concepts/concept-7.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Concept #7 - Fruit tapping</h5>
+              <p class="text-justified">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure error distinctio ipsum minima atque consequuntur provident, non voluptate ab voluptatibus odio incidunt! Culpa, quo qui. Nobis maxime culpa quaerat!
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../resources/img/water-clock/concepts/concept-8.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Concept #8 - Notification swiping</h5>
+              <p class="text-justified">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure error distinctio ipsum minima atque consequuntur provident, non voluptate ab voluptatibus odio incidunt! Culpa, quo qui. Nobis maxime culpa quaerat!
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../resources/img/water-clock/concepts/concept-9.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Concept #9 - Foreign language alphabet test</h5>
+              <p class="text-justified">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure error distinctio ipsum minima atque consequuntur provident, non voluptate ab voluptatibus odio incidunt! Culpa, quo qui. Nobis maxime culpa quaerat!
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../resources/img/water-clock/concepts/concept-10.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Concept #10 -  Morse code password</h5>
+              <p class="text-justified">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure error distinctio ipsum minima atque consequuntur provident, non voluptate ab voluptatibus odio incidunt! Culpa, quo qui. Nobis maxime culpa quaerat!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#concepts-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        
+        <button class="carousel-control-next" type="button" data-bs-target="#concepts-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- CHOICE OF CONCEPT DETAILS -->
+  <div class="row justify-content-center">    
+    <div class="bg-light text-dark rounded-3 shadow-lg col-12 p-4 m-1 col-xl-7">
+        <h3>Choice of Concept</h3>
+        <p class="text-justified">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure error distinctio ipsum minima atque consequuntur provident, non voluptate ab voluptatibus odio incidunt! Culpa, quo qui. Nobis maxime culpa quaerat!
+        </p>
+    </div>
+  </div>
+
+
+  <!-- REFINEMENT SKETCHES -->
+  <!-- img carousel from https://getbootstrap.com/docs/5.1/components/carousel/-->
+  <div class="row justify-content-center">    
+    <div class="bg-dark text-light  rounded-3 shadow-lg col-12 p-4 m-1 col-xl-7">
+      <h3 class=" m-2">Variations/ Details </h3>
+      
+      <p class="text-justified">
+        The following are some details and variations of our chosen concept, the “Foreign language alphabet test” lock screen.
+      </p>
+
+      <div id="refinements-carousel" class="carousel carousel-dark slide" data-bs-interval="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../resources/img/water-clock/refinements/refinement-1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Variation/ Detail #1 - Skip button</h5>
+              <p class="text-justified">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure error distinctio ipsum minima atque consequuntur provident, non voluptate ab voluptatibus odio incidunt! Culpa, quo qui. Nobis maxime culpa quaerat!
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../resources/img/water-clock/refinements/refinement-2.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Variation/Detail #2 - Voice prompt</h5>
+              <p class="text-justified">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure error distinctio ipsum minima atque consequuntur provident, non voluptate ab voluptatibus odio incidunt! Culpa, quo qui. Nobis maxime culpa quaerat!
+              </p>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <img src="../resources/img/water-clock/refinements/refinement-3.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Variation/Detail #3 - Language selection</h5>
+              <p class="text-justified">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure error distinctio ipsum minima atque consequuntur provident, non voluptate ab voluptatibus odio incidunt! Culpa, quo qui. Nobis maxime culpa quaerat!
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../resources/img/water-clock/refinements/refinement-4.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Variation/Detail #4 - Character tracing</h5>
+              <p class="text-justified">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure error distinctio ipsum minima atque consequuntur provident, non voluptate ab voluptatibus odio incidunt! Culpa, quo qui. Nobis maxime culpa quaerat!
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../resources/img/water-clock/refinements/refinement-5.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Variation/Detail #5 - Specific character to unlock (Passcode)</h5>
+              <p class="text-justified">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure error distinctio ipsum minima atque consequuntur provident, non voluptate ab voluptatibus odio incidunt! Culpa, quo qui. Nobis maxime culpa quaerat!
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../resources/img/water-clock/refinements/refinement-6.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Variation/Detail #6 - Character pronunciation feedback</h5>
+              <p class="text-justified">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure error distinctio ipsum minima atque consequuntur provident, non voluptate ab voluptatibus odio incidunt! Culpa, quo qui. Nobis maxime culpa quaerat!
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../resources/img/water-clock/refinements/refinement-7.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Variation/Detail #7 - Recall based prompt</h5>
+              <p class="text-justified">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure error distinctio ipsum minima atque consequuntur provident, non voluptate ab voluptatibus odio incidunt! Culpa, quo qui. Nobis maxime culpa quaerat!
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../resources/img/water-clock/refinements/refinement-8.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Variation/Detail #8 - Optional test</h5>
+              <p class="text-justified">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure error distinctio ipsum minima atque consequuntur provident, non voluptate ab voluptatibus odio incidunt! Culpa, quo qui. Nobis maxime culpa quaerat!
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../resources/img/water-clock/refinements/refinement-9.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Variation/Detail #9 - Daily retention test</h5>
+              <p class="text-justified">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure error distinctio ipsum minima atque consequuntur provident, non voluptate ab voluptatibus odio incidunt! Culpa, quo qui. Nobis maxime culpa quaerat!
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../resources/img/water-clock/refinements/refinement-10.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Variation/Detail #10 - Pronunciation test</h5>
+              <p class="text-justified">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure error distinctio ipsum minima atque consequuntur provident, non voluptate ab voluptatibus odio incidunt! Culpa, quo qui. Nobis maxime culpa quaerat!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#refinements-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        
+        <button class="carousel-control-next" type="button" data-bs-target="#refinements-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>  
+  </div>
+
+  <!-- IMPLEMENTATION DETAILS -->
+  <div class="row justify-content-center">    
+    <div class="bg-light text-dark rounded-3 shadow-lg col-12 p-4 m-1 col-xl-7">
+        <h3>Final Design</h3>
+        <p class="text-justified">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure error distinctio ipsum minima atque consequuntur provident, non voluptate ab voluptatibus odio incidunt! Culpa, quo qui. Nobis maxime culpa quaerat!
+        </p>
+    </div>
+  </div>
+
+  <div class="row justify-content-center">    
+    <div class="bg-dark text-light rounded-3 shadow-lg col-12 p-4 m-1 col-xl-7">
+        <h3>Implementation</h3>
+        <p class="text-justified">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate iure error distinctio ipsum minima atque consequuntur provident, non voluptate ab voluptatibus odio incidunt! Culpa, quo qui. Nobis maxime culpa quaerat!
+        </p>
+    </div>
+  </div>
+
+
+  <!-- FINAL PRODUCT AND VIDEO DEMO -->
+  <div class="row justify-content-center">    
+      <div class="bg-light text-dark rounded-3 shadow-lg col-12 p-4 m-1 col-xl-7">
+          <h3>Demo Video and Links</h3>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/DYpuJbVV2i0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p class="fw-bold"> Source Code: <a href="https://github.com/Marcellod1/water-clock" target="_blank"> https://github.com/Marcellod1/water-clock </a></p>
+      </div>
+  </div> 
+  <!-- Body container -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="container-fluid bg-dark text-light shadow-lg p-2">
+    <div class="row justify-content-center">
+      <div class="text-center col-12 col-md-6  offset-md-3">
+        <p>Copyright © 2021 Marcello Di Benedetto</p>
+      </div>
+      <div class="text-center col-12 col-md-3">
+        <p>Powered by <a class= "fw-bold link-no-deco" href="https://getbootstrap.com/" target="_blank">Bootstrap<a></p>
+      </div>
+  </footer>
+
+  <!-- Bootstrap javascript plugin bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
