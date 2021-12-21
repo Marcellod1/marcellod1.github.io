@@ -1,0 +1,455 @@
+<!doctype html>
+<html>
+    
+<head>
+    <meta charset="utf-8">
+    <title> marcellodb - projects</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+
+    <!-- Get bootstrap stylesheet from the BootStrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    
+</head>
+  
+<body class="bg-light text-dark">
+    <!-- Title -->
+    <header class="container-fluid bg-dark text-light p-2"> 
+        <div class="row justify-content-center">
+            <div class="text-center col-12 col-md-6">
+                <h1 class="fw-bold">The Emoji Bar</h1>
+                <p>CPSC 581 Fall 2021 - Project 4</p>
+                <a  class="link-no-deco" href="https://github.com/Marcellod1/emoji-overlay" target="_blank">
+                    <img src="../resources/img/github.png" alt="github-img" width="30" height="30">
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Navbar collapsable thanks to https://www.youtube.com/watch?v=qNifU_aQRio -->
+  <nav class="navbar navbar-expand-lg sticky-top nav-pills navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+      <ul class="navbar-nav fw-bold py-2">
+        <li class="nav-item ">
+          <a class="nav-link px-5 mx-3" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link active px-5 mx-3" href="projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled px-5 mx-3" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled px-5 mx-3" href="#">Files</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled px-5 mx-3" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+    
+<!-- Body container -->
+<div class="container-fluid p-3">
+  <div class="row justify-content-center">    
+    <div class="bg-light text-dark rounded-3 shadow-lg col-12 p-4 m-1 col-xl-7">
+        <h3>The Emoji Bar</h3>
+        <p>Created By: Marcello Di Benedetto, Christopher Rodriguez, Rory Skipper, Abraham Beauferris</p>
+        <p class="text-justified">
+          This project seeks to create a physical prototype that solves an everyday problem. The problem we chose to focus on was the common issue of dehydration during long work days. 
+          As computer science students, we spend a lot of time at our desks in front of screens, and while trying to meet deadlines and becoming immersed in daily tasks, it can be difficult
+          to remember something as simple as drinking a glass of water. This behaviour can lead to dehydration, and uncomfortable headaches.
+        </p>
+
+        <p class="text-justified">
+          As an answer to this, we created a novel device capable of reminding a user to drink a glass of water at set intervals throughout the day. The user can fill their glass, 
+          place it on the device’s scale, and after a time interval, will receive an auditory notification from the device, reminding them to take a break and drink a glass of water.
+          When the alarm does sound, the only way to dismiss it is to drink the glass of water and place the cup back on the scale, verifying that the user actually drank the water. 
+          The user can repeat this timer indefinitely, by placing another filled glass on the scale. This device will also track the user’s daily water intake, and display it on a screen.
+        </p>
+
+
+        <p class="text-justified">
+          We used a collaborative take on the 10 + 10 ideation method for this project to decide on a final design with useful and intuitive features and use cases. 
+        </p>
+        
+    </div>
+  </div>  
+
+  <!-- CONCEPT SKETCHES -->
+  <!-- img carousel from https://getbootstrap.com/docs/5.1/components/carousel/-->
+  <div class="row justify-content-center">    
+    <div class="bg-dark text-light rounded-3 shadow-lg col-12 p-4 m-1 col-xl-7">
+      <h3 class="p-2">Initial Concept Sketches</h3>
+
+      <p class="text-justified">
+        Intial ideation sketches for a physical prototype to "solve an everyday problem" with an Arduino.
+      </p>
+
+      <div id="concepts-carousel" class="carousel carousel-dark slide" data-bs-interval="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../resources/img/emoji-bar/concepts/concept-1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Concept #1 - Dog alarm</h5>
+              <p class="text-justified">
+                This design describes a physical prototype that acts as an alarm that indicates when your dog wants to leave the house. It would presumably work with a proximity sensor or camera, but we ultimately deemed it would be difficult to realize a prototype that worked consistently.
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../resources/img/emoji-bar/concepts/concept-2.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Concept #2 - Dog caller</h5>
+              <p class="text-justified">
+                This design describes a physical prototype that acts as a callback for when you are at a dog park with your pet. It would work with a battery powered vibration motor attached to a dog collar as well
+                as a secondary device the owner would carry to gauge distance from the dog. We ultimately decided an implementation would be difficult to realize due to technical constraints and difficulty of testing
+                the prototype.
+              </p>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <img src="../resources/img/emoji-bar/concepts/concept-3.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Concept #3 - Drink delivery</h5>
+              <p class="text-justified">
+                This design describes a physical prototype that acts as a drink delivery system, first pouring a drink then using an array of Toio robots to deliver the drink to the user.
+                While our ideation process used this prototype as a jumping off point for our final design, we ultimately decided this implementation was not novel enough.
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../resources/img/emoji-bar/concepts/concept-4.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Concept #4 - Automatically water a plant</h5>
+              <p class="text-justified">
+                This design describes a physical prototype that waters a plant according to a preset schedule, dispensing water into a plant pot. Again, while our ideation process used this prototype
+                as a jumping off point for our final design, we ultimately decided this implementation was not novel enough.
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../resources/img/emoji-bar/concepts/concept-5.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Concept #5 - Alarm trip wire</h5>
+              <p class="text-justified">
+                This design describes a physical prototype that sets an alarm upon someone entering a room. We ultimately decided a proximity-sensor-based alarm was a little too simple to adequately 
+                storyboard and develop intrigue.
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../resources/img/emoji-bar/concepts/concept-6.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Concept #6 - Back scratcher </h5>
+              <p class="text-justified">
+                This design describes a physical prototype of a motorized back scratcher that is mounted to the wall. Similar to the previous concept, we ultimately decided this idea was lacking in complexity.
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../resources/img/emoji-bar/concepts/concept-7.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Concept #7 - Nightstand Toio</h5>
+              <p class="text-justified">
+                This design describes an alarm system that upon ringing, activates several Toio robots to push useful objects within reach on your nightstand. While the design was functional and relevant to the
+                project’s goals, we ultimately decided it would be difficult to implement consistently and wasn’t particularly intriguing within the scope of the target audience.
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../resources/img/emoji-bar/concepts/concept-8.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Concept #8 - Wrist massager</h5>
+              <p class="text-justified">
+                This design describes a physical prototype of a motorized Tower Pros mounted to a table to act as a wrist massager. Similar to the back scratcher concept, we ultimately decided this idea was lacking in complexity.
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../resources/img/emoji-bar/concepts/concept-9.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Concept #9 - Stovetop pulley</h5>
+              <p class="text-justified">
+                This design describes a “stovetop timer” which would use a motor attached to a pulley attached to a stovetop knob set up with a timer. When the timer is set and activated, the motor would engage,
+                pulling on the pulley which would rotate the knob. This could be used as a timer. We ultimately abandoned this idea due to safety concerns regarding the idea. 
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../resources/img/emoji-bar/concepts/concept-10.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Concept #10 - Water clock</h5>
+              <p class="text-justified">
+                Finally, this design describes an alarm clock that helps those who have trouble obeying their alarms and getting out of bed. To disarm the alarm, the user must drink a glass of water and place it back 
+                onto a weight sensor. This action necessitates sitting up straight, and hydrating oneself, a good start to the day. This idea ultimately developed into our final design, due to its engaging concept,
+                usefulness as an everyday device, and novelty.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#concepts-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        
+        <button class="carousel-control-next" type="button" data-bs-target="#concepts-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- CHOICE OF CONCEPT DETAILS -->
+  <div class="row justify-content-center">    
+    <div class="bg-light text-dark rounded-3 shadow-lg col-12 p-4 m-1 col-xl-7">
+        <h3>Choice of Concept</h3>
+        <p class="text-justified">
+          Moving forward from the ideation phase, our group chose to iterate on concept #10, “The Water Clock”. We landed on this concept as this device aims to solve a well defined problem
+          that is especially relevant to our position as computer science students. This relatively simple design would provide a great benefit to the user, while also allowing us to become
+          more acquainted with managing several devices concurrently with an Arduino.
+        </p>
+    </div>
+  </div>
+
+
+  <!-- REFINEMENT SKETCHES -->
+  <!-- img carousel from https://getbootstrap.com/docs/5.1/components/carousel/-->
+  <div class="row justify-content-center">    
+    <div class="bg-dark text-light  rounded-3 shadow-lg col-12 p-4 m-1 col-xl-7">
+      <h3 class=" m-2">Variations/ Details </h3>
+      
+      <p class="text-justified">
+        The following are some details and variations of our chosen concept, the “The Water Clock"
+      </p>
+
+      <div id="refinements-carousel" class="carousel carousel-dark slide" data-bs-interval="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../resources/img/emoji-bar/refinements/refinement-1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Variation/ Detail #1 - Spill drink on user</h5>
+              <p class="text-justified">
+                This design variation entails a motor pushing the cup of water onto the user if they do not wake up upon the alarm sounding. 
+                While an effective negative reinforcement, we ultimately found this design a little too cruel, in opposition to the engaging user experience we were trying to achieve. 
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../resources/img/emoji-bar/refinements/refinement-2.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Variation/Detail #2 - Countdown display</h5>
+              <p class="text-justified">
+                This detailed sketch shows the screen displaying a countdown until the next drink. This was implemented in the final design as it proved to be much more 
+                relevant user feedback as opposed to just displaying the time of day.
+              </p>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
+            <img src="../resources/img/emoji-bar/refinements/refinement-3.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Variation/Detail #3 - Physical housing</h5>
+              <p class="text-justified">
+                This iteration seeked to refine the design of the system, integrating each input and output device together into a single module. 
+                We felt that this design enhanced the aesthetic appeal greatly and ultimately factored into our final design. 
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../resources/img/emoji-bar/refinements/refinement-4.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Variation/Detail #4 - Track empty glass weight</h5>
+              <p class="text-justified">
+                This detail outlines the device’s ability to “remember” the weight of an empty cup of water so as to identify if the cup is removed or filled, 
+                along with exactly how much liquid is within the apparatus. This was implemented in the final design, as the scale is “zeroed” upon startup.
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../resources/img/emoji-bar/refinements/refinement-5.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Variation/Detail #5 - Alarm disarm process</h5>
+              <p class="text-justified">
+                For this iteration, we further refined the ideas necessary for the functioning of the physical prototype. In this case, we thought that the design
+                 would need to detect the state of the water in the glass being drunk by the user. Since it would be easy to exploit the system if the cup was simply 
+                 being removed counting as a pass state, one of our group members suggested zeroing the scale with the glass being empty, thus using that specific weight 
+                 only as the recognized success state. This was a useful idea and ultimately ended up in our final design.
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../resources/img/emoji-bar/refinements/refinement-6.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Variation/Detail #6 - Display water volume</h5>
+              <p class="text-justified">
+                This variation describes a visual indicator to display the amount of water left in the glass. While novel, we ultimately felt this idea didn’t aid the core
+                functionality of the prototype in a practical sense, as we could just use a translucent cup as a way to offer the same information. 
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../resources/img/emoji-bar/refinements/refinement-7.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Variation/Detail #7 - Toio notification</h5>
+              <p class="text-justified">
+                This variation describes using a small robot, such as a Toio, to notify the user to drink upon the time limit finishing. While the alarm functionality was useful and
+                was implemented into the final design, we found the use of a Toio superfluous to the practical usability of our design.
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../resources/img/emoji-bar/refinements/refinement-8.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Variation/Detail #8 - Snack timer</h5>
+              <p class="text-justified">
+                This design describes a similar prototype with a different use case; in this case, as a snack timer that allows a user to space healthy snacks out within set intervals.
+                While useful, without the use of a cup, we would have to use an empty scale as the success state. Unfortunately, this would be easier to abuse as the user could simply 
+                place the object off the scale without eating it.
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../resources/img/emoji-bar/refinements/refinement-9.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Variation/Detail #9 - Push water towards the user</h5>
+              <p class="text-justified">
+                This design would push the water towards the user when they need to drink as an invitation of sorts. We ultimately decided the concept did not aid the core functionality
+                of the prototype enough to justify its implementation.
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../resources/img/emoji-bar/refinements/refinement-10.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption bg-dark text-light d-md-block">
+              <h5>Variation/Detail #10 - Display time</h5>
+              <p class="text-justified">
+                This design would display the time along with the alarm. As this feature is not integral to the operation of the device, we felt that it did not provide enough relevant 
+                information for the use case of a periodic “drink water!” notification. For this reason, this variation was not pursued further.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#refinements-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        
+        <button class="carousel-control-next" type="button" data-bs-target="#refinements-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>  
+  </div>
+
+  <!-- IMPLEMENTATION DETAILS -->
+  <div class="row justify-content-center">    
+    <div class="bg-light text-dark rounded-3 shadow-lg col-12 p-4 m-1 col-xl-7">
+        <h3>Final Design</h3>
+        <p class="text-justified">
+          The final design uses an Arduino, scale, LCD screen with alarm and timer encased in a box. We took many useful aspects 
+          from various points in our sketching and ideation process, such as the enclosed design, countdown timer, daily intake display, and an empty glass being used as a check for
+          successful consumption of the water. 
+        </p>
+
+        <p class="text-justified">
+          The user can fill their glass, place it on the device’s scale, and after a 20 minute interval (would be around an hour in a real world application or set by the user), would 
+          remind them to take a break and drink a glass of water. When the alarm does sound, the only way to dismiss it is to drink the glass of water and place the cup back on the scale, 
+          verifying that the user actually drank the water. The user can repeat this timer indefinitely, by placing another filled glass on the scale. This device will also track the user’s
+          daily water intake, and display it on a screen. This system can be used with all kinds of cups and glasses also being usable with a water bottle allowing the user to do multiple
+          alarms without getting up.
+        </p>
+    </div>
+  </div>
+
+  <div class="row justify-content-center">    
+    <div class="bg-dark text-light rounded-3 shadow-lg col-12 p-4 m-1 col-xl-7">
+        <h3>Implementation</h3>
+        <p class="text-justified">
+          This project was implemented using an Arduino Uno, HX711 and load cell, DS3231 real time clock, Nokia 5110 LCD, and a simple speaker. The frame for the scale was 3D printed and 
+          we used a cardboard box to hide all wires and boards that did not need to be exposed to increase the aesthetic appeal and simplicity of the visual design. The microcontroller 
+          was programmed using the Arduino IDE and utilizes external libraries for the various components including <a class= "fw-bold link-no-deco" href="https://github.com/olkal/HX711_ADC" target="_blank">HX711_ADC</a>, 
+          <a class= "fw-bold link-no-deco" href="http://www.rinkydinkelectronics.com/library.php?id=48" target="_blank">LCD5110_Graph</a> and <a class= "fw-bold link-no-deco" href="https://www.arduino.cc/reference/en/libraries/rtclib/" target="_blank">RTClib</a>.
+        </p>
+
+        <p class="text-justified">
+          My personal contribution to this project was the configuration and procurement of the hardware resources, integration of libraries for the hardware,
+          along with participating in pair programming for the program logic. All group members contributed to the ideation and refinment process of the 10+10 design process.
+        </p>
+    </div>
+  </div>
+
+
+  <!-- FINAL PRODUCT AND VIDEO DEMO -->
+  <div class="row justify-content-center">    
+      <div class="bg-light text-dark rounded-3 shadow-lg col-12 p-4 m-1 col-xl-7">
+          <h3>Storyboard</h3>
+          <iframe width="100%" height="500px" src="https://www.youtube.com/embed/D73wyB7d_sI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+  </div> 
+
+  <div class="row justify-content-center">    
+    <div class="bg-dark text-light rounded-3 shadow-lg col-12 p-4 m-1 col-xl-7">
+        <h3>Demo Video</h3>
+        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/w3FsD2y0SLw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div> 
+
+
+  <div class="row justify-content-center">    
+    <div class="bg-dark text-light rounded-3 shadow-lg col-12 p-4 m-1 col-xl-7">
+        <h3>Links</h3>
+        <p class="fw-bold"> <a  class="link-no-deco" href="https://github.com/Marcellod1/emoji-overlay" target="_blank">Source Code</a></p>
+    </div>
+  </div> 
+
+
+
+
+  <!-- Body container -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="container-fluid bg-dark text-light shadow-lg p-2">
+    <div class="row justify-content-center">
+      <div class="text-center col-12 col-md-6  offset-md-3">
+        <p>Copyright © 2021 Marcello Di Benedetto</p>
+      </div>
+      <div class="text-center col-12 col-md-3">
+        <p>Powered by <a class= "fw-bold link-no-deco" href="https://getbootstrap.com/" target="_blank">Bootstrap<a></p>
+      </div>
+  </footer>
+
+  <!-- Bootstrap javascript plugin bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
