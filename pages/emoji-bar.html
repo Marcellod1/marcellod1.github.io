@@ -62,18 +62,18 @@
   <div class="row justify-content-center">    
     <div class="bg-light text-dark rounded-3 shadow-lg col-12 p-4 m-1 col-xl-7">
         <h3>The Emoji Bar</h3>
-        <p>Created By: Marcello Di Benedetto, Christopher Rodriguez, Rory Skipper, Abraham Beauferris</p>
+        <p>Created By: Abraham Beauferris, Marcello Di Benedetto, Christopher Rodriguez, Rory Skipper</p>
         <p class="text-justified">
-          This project seeks to create a physical prototype that solves an everyday problem. The problem we chose to focus on was the common issue of dehydration during long work days. 
-          As computer science students, we spend a lot of time at our desks in front of screens, and while trying to meet deadlines and becoming immersed in daily tasks, it can be difficult
-          to remember something as simple as drinking a glass of water. This behaviour can lead to dehydration, and uncomfortable headaches.
+          This project seeks to create a novel interface to augment in-person and/or remote communication and collaboration. 
+          As an answer to this, we created a novel interface capable of allowing users to remotely communicate through emojis 
+          that correspond to the user's expression and pose. Users can emote in real life and the corresponding caricature will 
+          be shared, facilitating communication seamlessly and without the use of one's direct likeness. 
         </p>
 
         <p class="text-justified">
-          As an answer to this, we created a novel device capable of reminding a user to drink a glass of water at set intervals throughout the day. The user can fill their glass, 
-          place it on the device’s scale, and after a time interval, will receive an auditory notification from the device, reminding them to take a break and drink a glass of water.
-          When the alarm does sound, the only way to dismiss it is to drink the glass of water and place the cup back on the scale, verifying that the user actually drank the water. 
-          The user can repeat this timer indefinitely, by placing another filled glass on the scale. This device will also track the user’s daily water intake, and display it on a screen.
+          This system can be used to facilitate the private communication of emotions and gestures without the need to have a webcam on throughout periods of collaboration. 
+          This system is also a more lightweight design compared to video conferencing software, and could be implemented as an “overlay” over full screen applications.
+          It allows remote collaborators to get a sense of your emotions or gestures without exposing your face.
         </p>
 
 
@@ -91,7 +91,7 @@
       <h3 class="p-2">Initial Concept Sketches</h3>
 
       <p class="text-justified">
-        Intial ideation sketches for a physical prototype to "solve an everyday problem" with an Arduino.
+        Intial ideation sketches for a prototype to "augment in-person and/or remote communication and collaboration"
       </p>
 
       <div id="concepts-carousel" class="carousel carousel-dark slide" data-bs-interval="false">
@@ -99,9 +99,10 @@
           <div class="carousel-item active">
             <img src="../resources/img/emoji-bar/concepts/concept-1.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
-              <h5>Concept #1 - Dog alarm</h5>
+              <h5>Concept #1 - Emoji Overlay</h5>
               <p class="text-justified">
-                This design describes a physical prototype that acts as an alarm that indicates when your dog wants to leave the house. It would presumably work with a proximity sensor or camera, but we ultimately deemed it would be difficult to realize a prototype that worked consistently.
+                This design describes an interface in which users’ real time expressions are visually represented into corresponding emojis to facilitate remote communication. This idea 
+                seemed like a novel augmentation of remote communication with a reasonable scope and so we Ultimately decided to pursue it.
               </p>
             </div>
           </div>
@@ -109,11 +110,10 @@
           <div class="carousel-item">
             <img src="../resources/img/emoji-bar/concepts/concept-2.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
-              <h5>Concept #2 - Dog caller</h5>
+              <h5>Concept #2 - VR Watch Party</h5>
               <p class="text-justified">
-                This design describes a physical prototype that acts as a callback for when you are at a dog park with your pet. It would work with a battery powered vibration motor attached to a dog collar as well
-                as a secondary device the owner would carry to gauge distance from the dog. We ultimately decided an implementation would be difficult to realize due to technical constraints and difficulty of testing
-                the prototype.
+                This design describes an interface for users to converse remotely in a virtual reality environment, having functions such as suggesting and watching YouTube videos while sharing 
+                the virtual environment together. We ultimately decided this would be difficult to prototype due to the amount of headsets needed. 
               </p>
             </div>
           </div>
@@ -121,10 +121,10 @@
           <div class="carousel-item">
             <img src="../resources/img/emoji-bar/concepts/concept-3.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
-              <h5>Concept #3 - Drink delivery</h5>
+              <h5>Concept #3 - Eye-Tracking Conference Focus</h5>
               <p class="text-justified">
-                This design describes a physical prototype that acts as a drink delivery system, first pouring a drink then using an array of Toio robots to deliver the drink to the user.
-                While our ideation process used this prototype as a jumping off point for our final design, we ultimately decided this implementation was not novel enough.
+                This design describes an augmentation of a video-calling interface, in which the person that the user is visually focused on is maximized. While novel, we decided such an interface would 
+                be technically difficult to implement.
               </p>
             </div>
           </div>
@@ -132,10 +132,10 @@
           <div class="carousel-item">
             <img src="../resources/img/emoji-bar/concepts/concept-4.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
-              <h5>Concept #4 - Automatically water a plant</h5>
+              <h5>Concept #4 - Desk Tablet</h5>
               <p class="text-justified">
-                This design describes a physical prototype that waters a plant according to a preset schedule, dispensing water into a plant pot. Again, while our ideation process used this prototype
-                as a jumping off point for our final design, we ultimately decided this implementation was not novel enough.
+               This design outlines a physical touch like interface that would show the user's inputs on an accompanying desktop application. We did not pursue this as it seemed to similar
+               to common digital drawing pads.
               </p>
             </div>
           </div>
@@ -154,9 +154,10 @@
           <div class="carousel-item">
             <img src="../resources/img/emoji-bar/concepts/concept-6.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
-              <h5>Concept #6 - Back scratcher </h5>
+              <h5>Concept #6 - VR Checkers </h5>
               <p class="text-justified">
-                This design describes a physical prototype of a motorized back scratcher that is mounted to the wall. Similar to the previous concept, we ultimately decided this idea was lacking in complexity.
+                This design describes a virtual checkers interface that is updated based on a corresponding physical checkers board. While novel we ultimately decided the concept did not satisfy the design 
+                goals of augmenting communication and collaboration strongly enough.
               </p>
             </div>
           </div>
@@ -164,10 +165,10 @@
           <div class="carousel-item">
             <img src="../resources/img/emoji-bar/concepts/concept-7.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
-              <h5>Concept #7 - Nightstand Toio</h5>
+              <h5>Concept #7 - Remote Director</h5>
               <p class="text-justified">
-                This design describes an alarm system that upon ringing, activates several Toio robots to push useful objects within reach on your nightstand. While the design was functional and relevant to the
-                project’s goals, we ultimately decided it would be difficult to implement consistently and wasn’t particularly intriguing within the scope of the target audience.
+                This design describes a prototype interface where one could act as a remote director through virtual reality. While novel we ultimately decided against pursuing it due to its high complexity 
+                required to create a minimum viable prototype.
               </p>
             </div>
           </div>
@@ -175,9 +176,10 @@
           <div class="carousel-item">
             <img src="../resources/img/emoji-bar/concepts/concept-8.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
-              <h5>Concept #8 - Wrist massager</h5>
+              <h5>Concept #8 - Remote Cooking</h5>
               <p class="text-justified">
-                This design describes a physical prototype of a motorized Tower Pros mounted to a table to act as a wrist massager. Similar to the back scratcher concept, we ultimately decided this idea was lacking in complexity.
+                This design describes an interface that augments a cooking experience. It would allow a user to remotely cook through some sort of virtual interface. Unfortunately, while the concept is novel, 
+                it seemed difficult to realize due to safety concerns.
               </p>
             </div>
           </div>
@@ -185,10 +187,10 @@
           <div class="carousel-item">
             <img src="../resources/img/emoji-bar/concepts/concept-9.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
-              <h5>Concept #9 - Stovetop pulley</h5>
+              <h5>Concept #9 - Remote Server</h5>
               <p class="text-justified">
-                This design describes a “stovetop timer” which would use a motor attached to a pulley attached to a stovetop knob set up with a timer. When the timer is set and activated, the motor would engage,
-                pulling on the pulley which would rotate the knob. This could be used as a timer. We ultimately abandoned this idea due to safety concerns regarding the idea. 
+                This design describes a system where someone could be served a meal by a remotely controlled trolley. While novel, we felt it wasn’t a direct fit for our design goal of a novel way to communicate or
+                collaborate, as the interaction would be limited to serving a meal.
               </p>
             </div>
           </div>
@@ -196,11 +198,10 @@
           <div class="carousel-item">
             <img src="../resources/img/emoji-bar/concepts/concept-10.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
-              <h5>Concept #10 - Water clock</h5>
+              <h5>Concept #10 - Videochat Superimposed in AR</h5>
               <p class="text-justified">
-                Finally, this design describes an alarm clock that helps those who have trouble obeying their alarms and getting out of bed. To disarm the alarm, the user must drink a glass of water and place it back 
-                onto a weight sensor. This action necessitates sitting up straight, and hydrating oneself, a good start to the day. This idea ultimately developed into our final design, due to its engaging concept,
-                usefulness as an everyday device, and novelty.
+                This design describes another interface prototype, this time describing a method for multiple users to collaborate remotely. It entailed superimposing user’s likeness from a video-chat feed into an 
+                augmented reality environment, enhancing the realism of the communication. We ultimately thought this idea was novel but would be difficult to implement in a convincing manner given the time restraints.
               </p>
             </div>
           </div>
@@ -223,9 +224,9 @@
     <div class="bg-light text-dark rounded-3 shadow-lg col-12 p-4 m-1 col-xl-7">
         <h3>Choice of Concept</h3>
         <p class="text-justified">
-          Moving forward from the ideation phase, our group chose to iterate on concept #10, “The Water Clock”. We landed on this concept as this device aims to solve a well defined problem
-          that is especially relevant to our position as computer science students. This relatively simple design would provide a great benefit to the user, while also allowing us to become
-          more acquainted with managing several devices concurrently with an Arduino.
+          Moving forward from the ideation phase, our group chose to iterate on concept #1, “The Emoji Overlay”. We landed on this concept as this system aims to solve a well defined problem that is especially
+          relevant to our position as students working remotely in collaborative environments. This relatively simple design would provide a great benefit to the user, while also allowing us to become more 
+          acquainted with interesting libraries that identify changes in the user’s facial expressions and gestures.
         </p>
     </div>
   </div>
@@ -238,7 +239,7 @@
       <h3 class=" m-2">Variations/ Details </h3>
       
       <p class="text-justified">
-        The following are some details and variations of our chosen concept, the “The Water Clock"
+        The following are some details and variations of our chosen concept, the “The Emoji Overlay”
       </p>
 
       <div id="refinements-carousel" class="carousel carousel-dark slide" data-bs-interval="false">
@@ -246,10 +247,10 @@
           <div class="carousel-item active">
             <img src="../resources/img/emoji-bar/refinements/refinement-1.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
-              <h5>Variation/ Detail #1 - Spill drink on user</h5>
+              <h5>Variation/ Detail #1 - Multiple Connections</h5>
               <p class="text-justified">
-                This design variation entails a motor pushing the cup of water onto the user if they do not wake up upon the alarm sounding. 
-                While an effective negative reinforcement, we ultimately found this design a little too cruel, in opposition to the engaging user experience we were trying to achieve. 
+                This detail outlines the system’s support for multiple concurrent users. Each user will be displayed on the overlay, excluding the user who is running the program.
+                Emojis will be labelled with the individual’s username to allow for quick differentiation. This was implemented in the final product as it showed a scalable solution to our problem.
               </p>
             </div>
           </div>
@@ -257,10 +258,11 @@
           <div class="carousel-item">
             <img src="../resources/img/emoji-bar/refinements/refinement-2.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
-              <h5>Variation/Detail #2 - Countdown display</h5>
+              <h5>Variation/Detail #2 - Color Coded Emotions</h5>
               <p class="text-justified">
-                This detailed sketch shows the screen displaying a countdown until the next drink. This was implemented in the final design as it proved to be much more 
-                relevant user feedback as opposed to just displaying the time of day.
+                This variation includes a color coded display for classes of emojis. “Positive” emotions would be green, “Negative” are red, “Neutral” are yellow and “utility” emotes would be blue.
+                This would allow the user to at a glance, get a ballpark notion of how another person is feeling. This was not implemented in the final design as we thought giving each emotion a unique color
+                was more aesthetically pleasing and was still intuitive enough to support this “at a glance” functionality.
               </p>
             </div>
           </div>
@@ -268,10 +270,10 @@
           <div class="carousel-item">
             <img src="../resources/img/emoji-bar/refinements/refinement-3.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
-              <h5>Variation/Detail #3 - Physical housing</h5>
+              <h5>Variation/Detail #3 - Numerical Inputs</h5>
               <p class="text-justified">
-                This iteration seeked to refine the design of the system, integrating each input and output device together into a single module. 
-                We felt that this design enhanced the aesthetic appeal greatly and ultimately factored into our final design. 
+                This variation would parse the user’s numerical hand gestures into the numbers they represent. This was not implemented in the final design as the accuracy was greatly limited 
+                by the Google Teachable Machine.
               </p>
             </div>
           </div>
@@ -279,10 +281,10 @@
           <div class="carousel-item">
             <img src="../resources/img/emoji-bar/refinements/refinement-4.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
-              <h5>Variation/Detail #4 - Track empty glass weight</h5>
+              <h5>Variation/Detail #4 - Non-intrusive overlay</h5>
               <p class="text-justified">
-                This detail outlines the device’s ability to “remember” the weight of an empty cup of water so as to identify if the cup is removed or filled, 
-                along with exactly how much liquid is within the apparatus. This was implemented in the final design, as the scale is “zeroed” upon startup.
+                This detail shows a “non-intrusive” design for the overlay. The window containing the emojis for each individual would be transparent, allowing the user to use full screen applications 
+                alongside this overlay. This was not implemented in the final design due to implementation limitations, but would not be difficult to implement in future iterations using more appropriate frameworks.
               </p>
             </div>
           </div>
@@ -290,12 +292,10 @@
           <div class="carousel-item">
             <img src="../resources/img/emoji-bar/refinements/refinement-5.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
-              <h5>Variation/Detail #5 - Alarm disarm process</h5>
+              <h5>Variation/Detail #5 - Remote Emotion Cube</h5>
               <p class="text-justified">
-                For this iteration, we further refined the ideas necessary for the functioning of the physical prototype. In this case, we thought that the design
-                 would need to detect the state of the water in the glass being drunk by the user. Since it would be easy to exploit the system if the cup was simply 
-                 being removed counting as a pass state, one of our group members suggested zeroing the scale with the glass being empty, thus using that specific weight 
-                 only as the recognized success state. This was a useful idea and ultimately ended up in our final design.
+                This variation sketch describes a version of the system that includes a physical counterpart to the system. Instead of displaying the other user's emojis on a UI overlay instead,
+                the system will display the emojis on a physical counterpart on each user's desk. We did not end up using this variation due to its difficulty with upscaling to multiple users.
               </p>
             </div>
           </div>
@@ -303,10 +303,10 @@
           <div class="carousel-item">
             <img src="../resources/img/emoji-bar/refinements/refinement-6.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
-              <h5>Variation/Detail #6 - Display water volume</h5>
+              <h5>Variation/Detail #6 - Resizable Overlay</h5>
               <p class="text-justified">
-                This variation describes a visual indicator to display the amount of water left in the glass. While novel, we ultimately felt this idea didn’t aid the core
-                functionality of the prototype in a practical sense, as we could just use a translucent cup as a way to offer the same information. 
+                In this detail we describe a feature for the system that allows for the UI overlay to be resizable. This would allow for more flexibility and ease of use of our system. 
+                This was not implemented in the final design due to limitations in the GUI libraries used.
               </p>
             </div>
           </div>
@@ -314,10 +314,10 @@
           <div class="carousel-item">
             <img src="../resources/img/emoji-bar/refinements/refinement-7.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
-              <h5>Variation/Detail #7 - Toio notification</h5>
+              <h5>Variation/Detail #7 - Display Names</h5>
               <p class="text-justified">
-                This variation describes using a small robot, such as a Toio, to notify the user to drink upon the time limit finishing. While the alarm functionality was useful and
-                was implemented into the final design, we found the use of a Toio superfluous to the practical usability of our design.
+                This detail describes another feature which would allow for the users of the system to change their display name for other users to see. This would help with the anonymity 
+                and privacy angle of our project. This was not added to the final design as it did not add much for a proof of concept.
               </p>
             </div>
           </div>
@@ -325,11 +325,10 @@
           <div class="carousel-item">
             <img src="../resources/img/emoji-bar/refinements/refinement-8.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
-              <h5>Variation/Detail #8 - Snack timer</h5>
+              <h5>Variation/Detail #8 - Toio Expressions</h5>
               <p class="text-justified">
-                This design describes a similar prototype with a different use case; in this case, as a snack timer that allows a user to space healthy snacks out within set intervals.
-                While useful, without the use of a cup, we would have to use an empty scale as the success state. Unfortunately, this would be easier to abuse as the user could simply 
-                place the object off the scale without eating it.
+                This variation depicts a version of our system that upon interpreting certain gestures and facial expressions will relay different motions to a mobile robot in this case Toio. 
+                This variation would try to emulate human physicality using different gestures, but we did not implement this variation in the end as it would require every user to have a Toio robot.
               </p>
             </div>
           </div>
@@ -337,10 +336,10 @@
           <div class="carousel-item">
             <img src="../resources/img/emoji-bar/refinements/refinement-9.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
-              <h5>Variation/Detail #9 - Push water towards the user</h5>
+              <h5>Variation/Detail #9 - Gesture Inputs</h5>
               <p class="text-justified">
-                This design would push the water towards the user when they need to drink as an invitation of sorts. We ultimately decided the concept did not aid the core functionality
-                of the prototype enough to justify its implementation.
+                This detail introduces using hand gestures in the system. In this picture we show examples of going forward or moving backwards gestures. In the final system we ended up using 
+                different hand gestures including a “peace” sign, and an “okay” sign.
               </p>
             </div>
           </div>
@@ -348,10 +347,10 @@
           <div class="carousel-item">
             <img src="../resources/img/emoji-bar/refinements/refinement-10.png" class="d-block w-100" alt="...">
             <div class="carousel-caption bg-dark text-light d-md-block">
-              <h5>Variation/Detail #10 - Display time</h5>
+              <h5>Variation/Detail #10 - Emoji Queue System</h5>
               <p class="text-justified">
-                This design would display the time along with the alarm. As this feature is not integral to the operation of the device, we felt that it did not provide enough relevant 
-                information for the use case of a periodic “drink water!” notification. For this reason, this variation was not pursued further.
+                This is another variation of the project that would introduce a queue like system for the emoji display. This describes a version that would show users which emojis they are sending 
+                to the chat and which emoji is currently being displayed, is next to be displayed, and what was previously displayed.
               </p>
             </div>
           </div>
@@ -373,17 +372,10 @@
     <div class="bg-light text-dark rounded-3 shadow-lg col-12 p-4 m-1 col-xl-7">
         <h3>Final Design</h3>
         <p class="text-justified">
-          The final design uses an Arduino, scale, LCD screen with alarm and timer encased in a box. We took many useful aspects 
-          from various points in our sketching and ideation process, such as the enclosed design, countdown timer, daily intake display, and an empty glass being used as a check for
-          successful consumption of the water. 
-        </p>
-
-        <p class="text-justified">
-          The user can fill their glass, place it on the device’s scale, and after a 20 minute interval (would be around an hour in a real world application or set by the user), would 
-          remind them to take a break and drink a glass of water. When the alarm does sound, the only way to dismiss it is to drink the glass of water and place the cup back on the scale, 
-          verifying that the user actually drank the water. The user can repeat this timer indefinitely, by placing another filled glass on the scale. This device will also track the user’s
-          daily water intake, and display it on a screen. This system can be used with all kinds of cups and glasses also being usable with a water bottle allowing the user to do multiple
-          alarms without getting up.
+          For the final design, we chose to implement refinement 9: “gesture based inputs” and refinement 4: “Color coding” to varying degrees. Gestures were included 
+          in a smaller scope, supporting only three gesture based inputs, and color coding was utilized on a per emoji basis to support “at a glance” usage. Refinement 1 
+          was implemented with networking functionality, to reinforce this tools intent as a remote collaboration and communication tool. These refinements were chosen 
+          as they provided a reasonable breadth to the functionality and design for a prototype as a proof of concept for this system.
         </p>
     </div>
   </div>
@@ -392,15 +384,18 @@
     <div class="bg-dark text-light rounded-3 shadow-lg col-12 p-4 m-1 col-xl-7">
         <h3>Implementation</h3>
         <p class="text-justified">
-          This project was implemented using an Arduino Uno, HX711 and load cell, DS3231 real time clock, Nokia 5110 LCD, and a simple speaker. The frame for the scale was 3D printed and 
-          we used a cardboard box to hide all wires and boards that did not need to be exposed to increase the aesthetic appeal and simplicity of the visual design. The microcontroller 
-          was programmed using the Arduino IDE and utilizes external libraries for the various components including <a class= "fw-bold link-no-deco" href="https://github.com/olkal/HX711_ADC" target="_blank">HX711_ADC</a>, 
-          <a class= "fw-bold link-no-deco" href="http://www.rinkydinkelectronics.com/library.php?id=48" target="_blank">LCD5110_Graph</a> and <a class= "fw-bold link-no-deco" href="https://www.arduino.cc/reference/en/libraries/rtclib/" target="_blank">RTClib</a>.
+          This project was implemented with Python 3.8.7 using the socket library to structure a client/server architecture to update all remote applications with each individual's 
+          changes in emotions. Facial expressions and emotions are detected through the user’s webcam, and run through the DeepFace library, which uses a trained neural network to 
+          identify emotions such as sadness, anger, happiness, surprise or fear. Gesture based inputs are identified with a Google Teachable Machine we trained ourselves, allowing 
+          the parsing of webcam data into gestures including “thinking”, “ok” and “peace”. These states are received by the client application, and emoji based representations are 
+          shown accordingly. The GUI was implemented with tkinter, which came with some limitations to the aesthetic design of the application as our imagined overlay-like display 
+          with transparency was not possible with this library. In further iterations, this system would be adapted to a desktop based Javascript application to better facilitate a
+          responsive and aesthetically pleasing program layout..
         </p>
 
         <p class="text-justified">
-          My personal contribution to this project was the configuration and procurement of the hardware resources, integration of libraries for the hardware,
-          along with participating in pair programming for the program logic. All group members contributed to the ideation and refinment process of the 10+10 design process.
+          My personal contribution to this project was the integration of libraries for the software, along with participating in pair programming for the program logic. 
+          All group members contributed to the ideation and refinment process of the 10+10 design process, along with the documentation of the portfolio.
         </p>
     </div>
   </div>
@@ -410,14 +405,14 @@
   <div class="row justify-content-center">    
       <div class="bg-light text-dark rounded-3 shadow-lg col-12 p-4 m-1 col-xl-7">
           <h3>Storyboard</h3>
-          <iframe width="100%" height="500px" src="https://www.youtube.com/embed/D73wyB7d_sI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="100%" height="500px" src="https://www.youtube.com/embed/w0uEM9juo90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
   </div> 
 
   <div class="row justify-content-center">    
     <div class="bg-dark text-light rounded-3 shadow-lg col-12 p-4 m-1 col-xl-7">
         <h3>Demo Video</h3>
-        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/w3FsD2y0SLw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/2rFUxZUMio8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div> 
 
