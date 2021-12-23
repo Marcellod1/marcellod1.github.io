@@ -385,10 +385,10 @@
         <h3>Implementation</h3>
         <p class="text-justified">
           This project was implemented with Python 3.8.7 using the socket library to structure a client/server architecture to update all remote applications with each individual's 
-          changes in emotions. Facial expressions and emotions are detected through the user’s webcam, and run through the DeepFace library, which uses a trained neural network to 
-          identify emotions such as sadness, anger, happiness, surprise or fear. Gesture based inputs are identified with a Google Teachable Machine we trained ourselves, allowing 
+          changes in emotions. Facial expressions and emotions are detected through the user’s webcam, and run through the <a class= "fw-bold link-no-deco" href="https://pypi.org/project/deepface/" target="_blank">DeepFace</a> library, which uses a trained neural network to 
+          identify emotions such as sadness, anger, happiness, surprise or fear. Gesture based inputs are identified with a <a class= "fw-bold link-no-deco" href="https://teachablemachine.withgoogle.com/" target="_blank">Google Teachable Machine</a> we trained ourselves, allowing 
           the parsing of webcam data into gestures including “thinking”, “ok” and “peace”. These states are received by the client application, and emoji based representations are 
-          shown accordingly. The GUI was implemented with tkinter, which came with some limitations to the aesthetic design of the application as our imagined overlay-like display 
+          shown accordingly. The GUI was implemented with <a class= "fw-bold link-no-deco" href="https://docs.python.org/3/library/tkinter.html" target="_blank">TKinter</a>, which came with some limitations to the aesthetic design of the application as our imagined overlay-like display 
           with transparency was not possible with this library. In further iterations, this system would be adapted to a desktop based Javascript application to better facilitate a
           responsive and aesthetically pleasing program layout..
         </p>
